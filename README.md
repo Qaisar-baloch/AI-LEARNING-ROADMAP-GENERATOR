@@ -2,7 +2,7 @@
 title: AI Learning Roadmap Generator
 emoji: 🗺️
 colorFrom: blue
-colorTo: orange
+colorTo: yellow
 sdk: gradio
 sdk_version: 5.0.0
 app_file: app.py
