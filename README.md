@@ -1,4 +1,12 @@
-
+---
+title: AI Learning Roadmap Generator
+emoji: 🗺️
+colorFrom: blue
+colorTo: orange
+sdk: gradio
+app_file: app.py
+pinned: false
+---
 # AI Learning Roadmap Generator
 
 A multi-model AI pipeline that designs, critiques, and improves personalized learning roadmaps — turning a learner's profile into a structured, week-by-week curriculum with a built-in quality review loop.
