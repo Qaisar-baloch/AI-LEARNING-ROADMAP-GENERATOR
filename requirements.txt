@@ -2,3 +2,4 @@ google-genai
 groq
 gradio
 pydantic
+spaces
