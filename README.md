@@ -15,8 +15,8 @@ Built as part of the **Pak Angels, HEC-NCEAC Generative & Agentic AI Training** 
 
 **Live demo:** [huggingface.co/spaces/qaisar50850/AI-LEARNING-ROADMAP-GENERATOR](https://huggingface.co/spaces/qaisar50850/AI-LEARNING-ROADMAP-GENERATOR)
 
-![screenshot](docs/screenshot.png)
-*(add a screenshot of the running app here)*
+<img width="1244" height="637" alt="image" src="https://github.com/user-attachments/assets/aa6b2cbb-3f91-41bb-aae2-5d2874ab0ecf" />
+
 
 ## What it does
 
@@ -88,6 +88,7 @@ This project was built as practice/skill-building work within the **Pak Angels, 
 - Dr. Zafar Shahid
 - Hassan Syed
 - Naeem Zafar
+- Muhammad Talha
 - Umaima Rizwan
 - Ayesha Andleeb
 - Rana Muhammad Moeen ud Deen
