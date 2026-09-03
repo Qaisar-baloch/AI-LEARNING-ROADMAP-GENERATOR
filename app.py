@@ -390,7 +390,7 @@ def review_roadmap(user: UserProfile, roadmap: Roadmap) -> RoadmapReview:
     if finish_reason == "length":
         raise ValueError("Groq response was cut off before finishing the JSON.")
 
-        def _flatten_str_list(items):
+    def _flatten_str_list(items):
         result = []
         for item in items:
             if isinstance(item, list):
