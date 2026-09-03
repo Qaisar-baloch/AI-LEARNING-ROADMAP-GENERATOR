@@ -390,6 +390,17 @@ def review_roadmap(user: UserProfile, roadmap: Roadmap) -> RoadmapReview:
     if finish_reason == "length":
         raise ValueError("Groq response was cut off before finishing the JSON.")
 
+        def _flatten_str_list(items):
+        result = []
+        for item in items:
+            if isinstance(item, list):
+                result.append(" ".join(str(x) for x in item))
+            elif not isinstance(item, str):
+                result.append(str(item))
+            else:
+                result.append(item)
+        return result
+
     data = _json.loads(review_json)
     data.setdefault("overall_score", 50)
     data.setdefault("is_acceptable", False)
@@ -398,6 +409,9 @@ def review_roadmap(user: UserProfile, roadmap: Roadmap) -> RoadmapReview:
     data.setdefault("issues", [])
     data.setdefault("recommendations", [])
     data.setdefault("final_verdict", "No verdict text returned by the model.")
+
+    for key in ("strengths", "weaknesses", "issues", "recommendations"):
+        data[key] = _flatten_str_list(data[key])
 
     return RoadmapReview.model_validate(data)
 
