@@ -1,3 +1,4 @@
+import spaces
 import os
 import time
 import json as _json
@@ -523,7 +524,8 @@ def run_pipeline(user: UserProfile, max_rounds: int = 1):
 
 
 # --- Gradio UI ---------------------------------------------------------
-
+@spaces.GPU
+def generate_ui(domain, level, current_knowledge, hours_per_week, goal, learning_style, deadline_weeks):
 def generate_ui(domain, level, current_knowledge, hours_per_week, goal, learning_style, deadline_weeks):
     try:
         ui_user = UserProfile(
